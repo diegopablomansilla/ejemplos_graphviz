@@ -1,0 +1,270 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Modelo Conceptual"
+		fontcolor="#1f497D",
+		fontzise="10",
+	];	
+
+	
+	
+
+	subgraph clusterA {
+		label="Relacion Familiar"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		A [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterH {
+		label="Turno"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		H [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterR {
+		label="Persona"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		R [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterS {
+		label="Año"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		S [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterCC {
+		label="Tutor (Si / NO)"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		CC [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterDD {
+		label="Aspirante (Solicitud Ingreso)"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		DD [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterEE {
+		label="DNI"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		EE [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterFF {
+		label="Foto Carnet"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		FF [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterGG {
+		label="Certificado / Libreta"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		GG [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+
+	subgraph clusterII {
+		label="Caratula Examen"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		II [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterJJ {
+		label="Examen"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		JJ [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterKK {
+		label="Nota Lengua"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		KK [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterLL {
+		label="Nota Matematica"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		LL [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterMM {
+		label="Nota Final"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		MM [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+
+	R  -> A [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	A  -> R [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+    
+	A  -> CC [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	R  -> DD [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+	R  -> EE [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	R  -> FF [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	DD  -> GG [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+	
+
+	DD  -> II [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	DD  -> JJ [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	DD  ->  KK [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	DD  ->  LL [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	DD  ->  MM [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	DD  ->  H [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	DD  ->  S [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+	
+}
+

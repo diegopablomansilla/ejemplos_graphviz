@@ -1,0 +1,26 @@
+digraph G {
+  p [label="Postulante"];
+  i [label="Iniciado"];
+  p -> i [label="En solicitud de Admisión, dice 'he terminado'"];
+  re [label="rechazado"];
+  i -> re;
+  e [label="En evaluación por UA"];
+  i-> e [label="Documentación correcta."];
+  pas [label="Pendiente actualizar solicitud"];
+  i->pas [label="Documentación incompleta"];
+  pas->i [label="Modifica datos y dice 'he terminado'"];
+  i->re;
+  apto [label="apto"];
+  e -> apto[label="UA aprueba el plan propuesto"];
+  e -> re;
+  pap [label="Pendiente Actualizar Plan de estudio"];
+  e->pap [label="Se realizan observaciones al plan propuesto"];
+  pap->e [label="Modifica datos y dice 'he terminado'"];
+  adm [label="Admitido"];
+  apto -> adm [label="Se visa toda la documentación presentada"];
+  adm -> re;
+  mat [label="Matriculado"];
+  adm -> mat [label="Se matricula en guaraní y se le registra el legajo"];
+  fin [label="finalizado"];
+  mat -> fin [label="Certificado de actuación académica"];  
+ } 

@@ -1,0 +1,264 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Modelo Conceptual"
+		fontcolor="#1f497D",
+		fontzise="10",
+	];	
+
+	subgraph clusterA {
+		label="Objeto de Datos: "; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		A [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterB {
+		label="Solicitud de Admision (Postulacion)"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		B [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterC {
+		label="Programa de Estudio"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		C [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterD {
+		label="Analitico"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		D [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterE {
+		label="Pasaporte"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		E [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+	subgraph clusterF {
+		label="Certificado de Idioma"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		F [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterG {
+		label="Curriculum Vitae"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		G [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterH {
+		label="Foto Personal"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		H [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterI {
+		label="Certificado Psicofísico"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		I [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterJ {
+		label="Carta Postulacion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		J [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterK {
+		label="Carta Aceptación"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		K [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterL {
+		label="Comprobante Cumplimiento Documentacion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		L [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterM {
+		label="Carnet Estudiante Regular"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		M [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterN {
+		label="Certificado Actuacion Academica"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		N [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	A  ->  B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+	B  ->  C [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  D [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+	
+	B  ->  E [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  F [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  G [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  H [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  I [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  J [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  K [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  L [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  M [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  ->  N [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+
+
+
+
+}
+

@@ -1,0 +1,204 @@
+digraph G {
+	graph [
+		rankdir = "LR",
+		labelfontsize="3",  
+		label="Modelo Conceptual",
+		fontcolor="#1f497D",
+		
+	];		
+		
+	subgraph clusterA {
+		label="Plan Estudio"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		A [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterB {		
+		label="Curso"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";		
+		B [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+
+	subgraph clusterC {
+		label="Materia"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		C [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterD {
+		label="Seccion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		D [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterE {
+		label="Aula"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		E [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterH {
+		label="Docente"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		H [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+        subgraph clusterI {
+		label="Horario Docente"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		I [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterJ {
+		label="Alumno"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		J [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+      
+
+	subgraph clusterK {
+		label="Trimestre"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		K [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterL {
+		label="Turno"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		L [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};  
+
+
+	A  -> B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	B  -> C [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	B  -> D [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	D  -> E [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];			
+		
+
+	D  -> J [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	I  -> E [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	I  -> L [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	A  -> K [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 3",
+	];
+
+	C  -> H [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	D  -> H [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	H  -> I [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];  
+
+}
+

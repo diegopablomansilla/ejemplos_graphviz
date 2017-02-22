@@ -1,0 +1,196 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Modelo Conceptual"
+		fontcolor="#1f497D",
+		fontzise="36",
+	];
+
+	subgraph clusterC {
+		label="Alumno (Matricula)"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		C [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};      
+
+	subgraph clusterO {
+		label="Resumen Semanal"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		O [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterP {
+		label="Resumen Mensual"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		P [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterQ {
+		label="Resumen Anual"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		Q [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterX {
+		label="Boletin Anual"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		X [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+	
+	subgraph clusterS {
+		label="Año"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		S [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterT {
+		label="Nº Legajo"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		T [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterU {
+		label="Nº Banco"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		U [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterV {
+		label="Seccion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		V [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+	
+
+	subgraph clusterCC {
+		label="Persona"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		CC [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};    
+
+	
+	C  -> S [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	C  -> T [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	C  -> U [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];  
+
+	C  -> V [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];  
+
+	C  -> X [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	
+
+	C  -> O [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	C  -> P [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	C  -> Q [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	CC  -> C [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+
+    
+	
+	
+
+	
+	
+}
+

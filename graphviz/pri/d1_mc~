@@ -1,0 +1,96 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Modelo Conceptual: Solicitud de Admision"
+		fontcolor="#1f497D",
+		fontzise="36",
+	];		
+		
+	subgraph clusterA {
+		label="Solicitud Admision"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		A [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterB {
+		label="Programa de Estudios"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		B [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterC {
+		label="Institucion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		C [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterD {
+		label="Pais"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		D [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+
+	subgraph clusterH {
+		label="Postulante"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		H [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+		
+	A  -> B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];	
+
+	A  -> C [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	A  -> D [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1 (Pais de la Institucion)",
+	];
+	
+	A  -> H [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];	
+
+}
+

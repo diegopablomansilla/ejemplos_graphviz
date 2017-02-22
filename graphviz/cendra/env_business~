@@ -1,0 +1,22 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Ambiente - Competencia"
+		fontcolor="#1f497D",
+		fontzise="36",
+	];	
+
+	dm [shape=box, image="dm.png", peripheries=0, labelloc="left", label="", fontcolor="#1f497D"];	
+
+	r2docuo [shape=box, url="https://www.r2docuo.com/es", image="r2docuo.png", peripheries=0, labelloc="b", label="/www.r2docuo.com/es", fontcolor="#1f497D"];	
+		
+	r2docuo  -> dm [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="www.r2docuo.com/es",
+	];	
+
+		
+
+}
+

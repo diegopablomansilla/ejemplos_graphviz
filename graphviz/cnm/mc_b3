@@ -1,0 +1,498 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Modelo Conceptual"
+		fontcolor="#1f497D",
+		fontzise="36",
+	];					
+
+	subgraph clusterB {
+		label="Docente"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		B [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterC {
+		label="Alumno (Matricula)"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		C [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+      
+
+	subgraph clusterD {
+		label="Planilla Calificacion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		D [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterE {
+		label="Calificacion Diaria"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		E [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterF {
+		label="Inasistencia"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		F [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterG {
+		label="Suspencion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		G [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterH {
+		label="Turno"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		H [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterI {
+		label="Justificacion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		I [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterJ {
+		label="Celador"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		J [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+	subgraph clusterK {
+		label="Jefe Celador"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		K [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterL {
+		label="Regente"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		L [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterM {
+		label="NT"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		M [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterN {
+		label="PT"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		N [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterO {
+		label="Resumen Semanal"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		O [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterP {
+		label="Resumen Mensual"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		P [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterQ {
+		label="Resumen Anual"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		Q [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterX {
+		label="Boletin Anual"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		X [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+	
+	subgraph clusterS {
+		label="Año"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		S [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterT {
+		label="Nº Legajo"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		T [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterU {
+		label="Nº Banco"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		U [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterV {
+		label="Seccion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		V [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterY {
+		label="Trimestre"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		Y [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterZ {
+		label="Tipo (I/J)"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		Z [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterAA {
+		label="Acta Calificacion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		AA [
+			shapefile="clip 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterBB {
+		label="Fecha"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		BB [
+			shapefile="attribute 52.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterCC {
+		label="Persona"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		CC [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};    
+
+	
+	C  -> S [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	C  -> T [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	C  -> U [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];  
+
+	C  -> V [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];  
+
+	C  -> X [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	C  -> D [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	C  -> O [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	C  -> P [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	C  -> Q [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+
+	C  -> G [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+	G  -> J [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	G  -> K [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	G  -> L [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+	G  -> B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+
+
+
+
+	D  -> E [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+	D  -> B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];	
+
+	C  -> F [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+	
+
+	F  -> H [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	F  -> I [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-1",
+	];
+
+
+	D  -> M [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	D  -> N [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];	
+
+	D  -> Y [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	F  -> Z [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  -> AA [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+	E  -> BB [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	CC  -> C [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 0-N",
+	];
+
+
+    
+	
+	
+
+	
+	
+}
+

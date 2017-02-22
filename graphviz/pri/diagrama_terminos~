@@ -1,0 +1,15 @@
+digraph G {
+  Interesado ;
+  pri [label="Prosecretaría internacionales"];
+  Interesado -> pri [label="1 ficha_solicitud_admision"];
+  pri -> pri [label="2 valición de datos"]
+  fac [label="despacho_alumnos_facultad"];
+  pri -> fac [label= "3 Envio de solicitudes"];
+  fac -> pri [label= "4 aprobación plan propuesto"];
+  pri -> Interesado [label= "5 aprobación plan propuesto"];
+  Interesado -> pri [label = "6 documentación en papel"];
+  pri -> fac [label = "7 ok"];
+  fac -> Interesado [label = "8 matriculacion"];
+  fac -> pri [label = "9 informe situación academica"];
+  pri -> Interesado [label = "10 informe"];
+ }

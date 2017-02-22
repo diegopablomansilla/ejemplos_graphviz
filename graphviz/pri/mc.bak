@@ -1,0 +1,167 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Modelo Conceptual"
+		fontcolor="#1f497D",
+		fontzise="36",
+	];		
+		
+	subgraph clusterA {
+		label="Persona"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		A [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterB {
+		label="Postulacion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		B [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	 subgraph clusterI {
+		label="Solicitud Admision"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		I [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterC {
+		label="Analitico"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		C [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterD {
+		label="Carta Postulacion"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		D [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+        subgraph clusterE {
+		label="Pasaporte"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		E [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterF {
+		label="Certificado Idioma"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		F [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterG {
+		label="Foto"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		G [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterH {
+		label="Certificado Psisco Fisisco"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		H [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+		
+	A  -> B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+
+	B  -> I [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  -> C [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  -> D [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  -> E [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  -> F [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  -> G [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+
+	B  -> H [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1",
+	];
+}
+

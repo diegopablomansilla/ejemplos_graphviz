@@ -1,0 +1,37 @@
+digraph G {
+  a1a [label="Programa Intercambio"];
+  a1b [label="Convenios Cooperación"];
+  a1c [label="Convenios sin Intercambio"];
+  a1d [label="Unviversitarios"];
+  a1e [label="No universitarios"];
+  sad [label="Solicitud Admision"];
+  a1a -> sad;
+  a1b -> sad;
+  a1c -> sad;
+  a1d -> sad;
+  a1e -> sad;
+  fad [label="fechas admision"];
+  sad -> fad;
+  pac [label="Propuesta Academica"];
+  esp [label="Dominio Español"];
+  sad -> pac;
+  sad -> esp;
+  mpac [label="modificación Prop. Academ."];
+  pac -> mpac;
+  cadm [label="carta aceptación"];
+  pac -> cadm;
+  esp -> cadm;
+  eri [label="Estudiante Regular Internacional"];
+  cadm -> eri [label="Matricualción"];
+  carnet [label="carnet estudiante regular"];
+  eri -> carnet;
+  san [label="sanciones"];
+  eri -> san;
+  cert [label="Certificación estudios realizados"];
+  eri -> cert;
+  san -> cert;
+  ts [label="Tasas de servicios"];
+  a1c -> ts;
+  a1d -> ts;
+  a1e -> ts;
+ }

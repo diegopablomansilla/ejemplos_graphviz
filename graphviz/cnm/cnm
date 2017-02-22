@@ -1,0 +1,40 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Modelo Conceptual"
+		fontcolor="#1f497D",
+		fontzise="36",
+	];		
+		
+	subgraph clusterA {
+		label="Plan Estudio"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		A [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterB {
+		label="Curso"; 
+		peripheries=0; 
+		labelloc="b"; 
+		fontcolor="#1f497D";
+		B [
+			shapefile="file.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+
+	A  -> B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tiene 1-N",
+	];
+}
+

@@ -1,0 +1,282 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+		label="Diagrama de Estados - Ciclo de Vida: Postulacion - Roles"
+		fontcolor="#1f497D",
+		fontzise="36",
+	];
+
+		
+		
+	subgraph clusterA {
+		label="Iniciada"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		A [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	subgraph clusterB {
+		label="En Evaluacion"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		B [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+      subgraph clusterC {
+		label="Incompleta"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		C [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	
+      subgraph clusterD {
+		label="Apta"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		D [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+      subgraph clusterE {
+		label="Admitida"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		E [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+      subgraph clusterF {
+		label="Rechazada"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		F [
+			shapefile="semafororojo.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};	
+
+	subgraph clusterG {
+		label="Modificacion Plan"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		G [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterH {
+		label="Desistido"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		H [
+			shapefile="semafororojo.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterI {
+		label="No Iniciada"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		I [
+			shapefile="semaforo.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterJ {
+		label="Matriculado"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		J [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterK {
+		label="Finalizado"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		K [
+			shapefile="semafororojo.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	subgraph clusterL {
+		label="En Evaluacion II"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		L [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+	
+	subgraph clusterM {
+		label="Modificacion Plan II"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		M [
+			shapefile="semaforoapagado.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+
+	subgraph clusterN {
+		label="Calificaciones Enviadas"; 
+		labelloc="b"; 
+		peripheries=0; 
+		fontcolor="#1f497D";
+		N [
+			shapefile="semafororojo.png", 
+			peripheries=0, 
+			style=invis
+		];	
+	};
+
+	I  -> A [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Postulante",
+	];
+	
+	A  -> B [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="PRI",
+	];
+
+	A  -> C [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="PRI",
+	];
+
+	
+
+	B  -> D [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tutor",
+	];
+
+	
+	D  -> E [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="PRI",
+	];
+
+	
+
+	B  -> G [
+		fontcolor="#808080",		
+		color="#1f497D",
+		label="Tutor",
+	];
+
+	G  -> B [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="Postulante",
+	]; 
+	
+	C  -> A [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="Postulante",
+	];
+
+	A  -> F [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="PRI",
+	];
+
+
+	
+
+
+	J  -> K [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="PRI",
+	]; 
+
+	L  -> M [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="Tutor",
+	]; 
+
+	M  -> L [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="Postulante",
+	]; 
+
+	L  -> J [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="Tutor",
+	];
+
+	E  -> M [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="Tutor",
+	]; 
+
+	K  -> N [
+		fontcolor="#808080",
+		color="#1f497D",
+		label="PRI",
+	];
+
+
+
+}

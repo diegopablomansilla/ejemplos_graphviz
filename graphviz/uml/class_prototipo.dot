@@ -1,0 +1,90 @@
+// dot 2.36.0 on Linux 3.13.0-40-generic
+// SchemaSpy rev Unknown
+digraph "oneDegreeRelationshipsDiagram" {
+  graph [
+    label="Modelo de Datos Simplificado de Cclip (Basado en UML Class Diagram)"
+    bgcolor="#FFFFFF"
+    labeljust="l"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="8"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="9"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+ 
+  
+   "ClaseTres" [
+
+    label=<
+
+    <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+
+      <TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>ClaseTres</B></TD></TR>
+
+	<TR><TD PORT="erased" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT">erased : Boolean  </TD></TR>
+      <TR><TD PORT="claseDos" COLSPAN="3" BGCOLOR="#FFF59D" ALIGN="LEFT"><B>claseDos : ClaseDos  </B></TD></TR>
+      
+     
+    </TABLE>>
+
+    URL="physical_person.html"
+    tooltip="physical_person"
+
+  ];
+
+  "ClaseDos" [
+
+    label=<
+
+    <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+      
+	<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"><B>ClaseDos</B></TD></TR>
+      
+	<TR><TD PORT="erased" COLSPAN="2" BGCOLOR="#FFF59D" ALIGN="LEFT">erased : Boolean  </TD></TR>
+      	<TR><TD PORT="claseTres" COLSPAN="2" BGCOLOR="#FFF59D" ALIGN="LEFT"><B>claseTres : ClaseTres  </B></TD></TR>
+      	
+            
+    </TABLE>>
+
+    URL="pp_address.html"
+    tooltip="pp_address"
+
+  ];
+
+subgraph clustercom_cclip_model {
+				
+				color="#FFF176";
+				label = "Package com.cclip.model";
+
+ "ClaseUno" [
+
+    label=<
+
+    <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" BGCOLOR="#ffffff">
+      
+	<TR><TD COLSPAN="3" BGCOLOR="#FFF176" ALIGN="CENTER"> <B> ClaseUno </B> </TD></TR>
+      
+	
+      	<TR><TD PORT="name" COLSPAN="2" BGCOLOR="#FFF59D" ALIGN="LEFT">name : String  </TD></TR>
+      	<TR><TD PORT="lastName" COLSPAN="2" BGCOLOR="#FFF59D" ALIGN="LEFT">lastName : String  </TD></TR>
+            
+    </TABLE>>
+
+    URL="pp_address.html"
+    tooltip="pp_address"
+
+  ];
+
+}
+  "ClaseUno" -> "ClaseDos" [dir=back,arrowtail=empty, color="#F9A825"];
+
+ "ClaseDos":"claseTres":w -> "ClaseTres":"claseDos":e [arrowhead=none, dir=back, arrowtail=none, arrowhead=none, headlabel = "1", taillabel = "1", fontsize="8", color="#F9A825"];
+
+}
